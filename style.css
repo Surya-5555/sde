@@ -1,0 +1,139 @@
+/* /* p{
+ 
+    background:red;
+    font-family:arial;
+    font-style:normal;
+    font-weight:bold;
+    font: 50px bold small-caps;
+    background-color: transparent;
+   
+}
+p{
+    display:inline-block;
+    border:10px dashed red;
+}
+body{
+    background-image: url('goatvijay.avif');
+    background-repeat: no-repeat;
+    border:4px dashed red;
+    background-size: cover;
+   
+} */
+ /* div{
+
+    height: 400px;
+    width:700px;
+    background-image:linear-gradient(yellow 50px,green),url('goatvijay.avif');
+    background-size: cover; 
+    background-blend-mode: overlay;
+    opacity:1;
+}
+.one{
+    letter-spacing: 10px;
+    text-decoration:underline;
+}
+span{
+    vertical-align: super;
+    text-transform: capitalize;
+}
+.two{
+    text-align: justify;
+    text-indent: 70px;
+    line-height:50px;
+} */
+/* 
+p{
+    color:blueviolet;
+}
+.hi{
+    color:yellow ;
+}
+
+
+#one{
+    color:green !important;
+
+}
+/* a[title="click"]{
+    color:yellow;
+} */
+ /* a:hover{
+    color:red;
+ } 
+ a:active{
+    color:green;
+ }
+ a:visited{
+    color:pink;
+ } */ 
+
+
+
+ /* project-chessboard */
+
+
+ 
+/* html{
+    background-color: grey;
+}
+body{
+    width:800px;
+    height:800px;
+    background-color:white;
+    margin:70px;
+    margin-left: 30%;
+    border:2px solid black;
+}
+.one{
+    width:100%;
+    height:100px;
+    float:left;
+}
+.two:hover{
+    color:chocolate;
+}
+.two{
+    width: 100px;
+    height: 100px;
+    float:left;
+    background-color: white;
+    font-size: 60px;
+
+    text-align:center;
+    color:rosybrown;
+    opacity:0.6;
+}
+.three{
+    width: 100px;
+    height: 100px;
+    float:left;
+    background-color: black;
+}
+  */
+
+
+
+/* project-done */
+
+/* 
+:root{
+    --bgcolor:red;
+    --color:white;
+}
+
+p{
+    background-color:var(--bgcolor);
+    color:var(--color);
+}
+.two{
+    background-color: greenyellow;
+}
+.one{
+    background-color:var(--bgcolor);
+} */
+
+/* 
+
+h5:only-of-type{
+    background-color: red;
+} */
