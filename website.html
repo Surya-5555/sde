@@ -508,9 +508,16 @@
 
 
 
+   
 
 
 
+      <!-- Done responsive nav bar -->
+
+
+
+
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -579,7 +586,7 @@
         }
         .navbar-links ul{
             flex-direction: column;
-        
+            width: 100%;
         }
         .navbar-links ul li{
             text-align: center;
@@ -608,6 +615,273 @@
         </ul>
     </div>
 </div>
-<script src="script.js"></script>
+
 </body>
-</html>
+</html> -->
+    
+
+
+
+
+     <!-- Done -->
+
+
+
+
+
+
+<!-- Done Style Table
+
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding :0;
+                box-sizing: border-box;
+            }
+           body{
+            height: 100vh;
+            width: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+           }
+           h1{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color:orange;
+           }
+           .table{
+            border-collapse: collapse;
+            font-size:20px;
+            min-width:600px;
+            margin:30px auto;
+            box-shadow: 0 0 15px rgba(0,0,0,1);
+            user-select: none;
+            cursor: pointer;
+           }
+           .table thead tr{
+            background-color: brown;
+            color: white;
+           }
+           .table th{
+            font-weight: 500;
+            padding: 12px 15px;
+            text-align: left;
+            text-transform: uppercase;
+           }
+           .table td{
+            padding: 12px 15px;
+            color:rgba(0,0,0,0.7)
+           }
+           .table tr{
+            border-bottom: 1px solid gray;
+           }
+        </style>
+     </head>
+     <body>
+        <h1>Table style in css</h1>
+        <table class="table">
+           <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>CITY</th>
+                <th>STATUS</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+                <td>surya</td>
+                <td>35</td>
+                <td>trichy</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>surya</td>
+                <td>35</td>
+                <td>trichy</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>surya</td>
+                <td>35</td>
+                <td>trichy</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>surya</td>
+                <td>35</td>
+                <td>trichy</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>surya</td>
+                <td>35</td>
+                <td>trichy</td>
+                <td>Active</td>
+            </tr>
+           </tbody>
+        </table>
+     </body>
+     </html> -->
+
+
+
+
+
+     <!-- done -->
+
+
+
+
+
+
+
+
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            body{
+                margin-top:50px;
+            }
+            .header{
+                position: fixed;
+                top:0;
+                left:0;
+                width:100%;
+                background-color: brown;
+                height:50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding:0 10px;
+            }
+            .logo{
+                font-size:20px;
+                font-weight:500;
+                color:white;
+            }
+            .header button{
+                width: 50px;
+                flex-shrink: 0;
+                font-size: 30px;
+               background:none;
+               border:0;
+               outline:0;
+               color:white;
+               cursor: pointer;
+               padding:10px;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               gap : 5px;
+            }
+            .bar{
+                width: 30px;
+                height:3px;
+                background-color: thistle;
+                border-radius: 10px;
+            }
+            .links{
+                position:fixed;
+                top:0;
+                left:0;
+                /* z-index: 2; */
+                height: 100vh;
+                width:250px;
+                background-color: white;
+
+            }
+            .link{
+                display:flex;
+                align-items: center;
+                padding: 12px 15px;
+                font-weight: 500;
+                text-decoration: none;
+                font-size: 14px;
+                color:blueviolet;
+            }
+
+            .link.active,.link:hover{
+                color:blue;
+                background-color: lavender;
+            }
+            .links{
+                  transform: translate(-250px);
+                  transition: 0.5s;
+            }
+            .content{
+                padding:10px;
+            }
+            .open .links{
+                transform:translateX(0px);
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            }
+           .nav-overlay{
+                position:fixed;
+                top:0;
+                left:250px;
+                width: 100vw;
+                height:100vh;
+                background-color: rgba(0,0,0,0.2);
+               backdrop-filter:blur(2px);
+               visibility: hidden;
+               opacity:0;
+               transition: 0.3s;
+
+            }
+            .open .nav-overlay{
+                visibility: visible;
+                opacity:1;
+            }
+        </style>
+     </head>
+     <body>
+        <div class="header">
+            <div class="logo">Surya</div>
+                <button id="btn-Nav">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </button>
+        </div>
+           <div class="side-nav open">     <!--   open - manipulate using js   -->
+        
+                <div class="links">
+                    <a href="#" class="link active">Home</a>
+                    <a href="#" class="link">Product</a>
+                    <a href="#" class="link">Contact</a>
+                    <a href="#" class="link">Download</a>
+                </div><div class="nav-overlay"></div>
+            </div> 
+            <div class="content">
+                <h3>Page Title</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea tenetur commodi placeat id eum quisquam qui officiis dolor cupiditate! Molestias rerum quasi incidunt nesciunt, dolor error voluptate commodi quia cupiditate iste soluta qui repellendus ipsa, eaque odit quis, dolorem consequuntur obcaecati delectus nihil hic quibusdam! Dignissimos autem alias commodi dicta accusamus quasi architecto nihil. Obcaecati qui doloremque ducimus perferendis unde rem deleniti quod possimus nesciunt in, temporibus dolorum reiciendis aspernatur, voluptatibus nostrum quasi, distinctio enim tempore sint! Vitae facere rem nam. Dignissimos aperiam, exercitationem laudantium facilis modi blanditiis, suscipit similique aliquid qui, asperiores sed maiores sunt quam placeat tenetur recusandae?</p>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea dolor enim temporibus veniam dicta qui, quibusdam, modi iste rerum doloremque repellat corporis exercitationem fuga vero. Asperiores sint recusandae aliquam voluptate debitis exercitationem ducimus vel eum a consequatur temporibus, laboriosam, quia et, nisi alias omnis quaerat reprehenderit doloremque. Consectetur harum, a debitis ratione quo ea omnis fugit itaque? Exercitationem reprehenderit hic culpa repellendus eum. Vel excepturi facilis consequatur perferendis. Minima aliquid nam ab nemo dignissimos quo velit ipsum placeat? Dolores a architecto sed molestias enim, rerum vero voluptatem iusto dolore, aperiam hic iure modi! Impedit fugiat maiores eum inventore atque nostrum!</p>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi aperiam ad suscipit. Quaerat atque ad quibusdam neque in blanditiis officiis exercitationem, perferendis quis eligendi mollitia alias modi iste? Ducimus mollitia accusamus voluptates natus sint quae, veniam non. Eligendi alias minima accusamus quidem, quo debitis tempora rem adipisci corrupti. Quasi in mollitia illo voluptates dignissimos esse veritatis doloremque, officia expedita magni eveniet laboriosam quidem quisquam soluta hic architecto nisi laudantium dolorum. Doloribus voluptatibus tempore magnam iusto rem praesentium, sed natus ab, iure dolor maxime tempora ullam mollitia, quas similique? Deleniti totam est recusandae cumque tempora ad. Sint soluta eum exercitationem magni.</p>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, voluptate molestias aliquam quis in illo vitae eos? Optio repudiandae dolorem assumenda omnis consectetur odit quam voluptas neque eum iste, dolorum doloribus fugit recusandae sequi sapiente saepe et, cum corporis laboriosam a aliquid provident possimus laudantium id? Accusantium, omnis soluta beatae eveniet quas explicabo. Perferendis sed, ab magni illo ut numquam distinctio ipsum quo aperiam magnam saepe alias mollitia eaque cum, iste sit animi modi id, libero adipisci! Quia dolores consequuntur magni maxime ab? Ex, doloribus. Pariatur quisquam tenetur, praesentium commodi nesciunt esse ex, facere accusamus porro reiciendis molestias numquam possimus ab harum incidunt distinctio quidem? Velit libero eaque suscipit blanditiis quisquam. Repudiandae, est amet? Magni, similique assumenda illo nihil doloremque quasi dolore aspernatur cupiditate repudiandae pariatur quos commodi voluptas, ut expedita laudantium numquam quam reiciendis, dolores eum earum consequuntur corrupti sunt? Dignissimos quae nemo illo recusandae neque maxime exercitationem illum cumque et, dolorem itaque expedita ipsum harum dolore, quisquam quod atque explicabo blanditiis facere rerum nisi sed obcaecati? Omnis aliquid minima ex maxime a voluptates nulla, repudiandae dolorem ipsam facere libero accusamus at optio debitis ratione eveniet fuga ab. Eius quos culpa totam magnam hic quod tempore neque porro consectetur.</p>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatum laboriosam nihil! Laborum facere laudantium atque facilis doloremque ullam corporis libero harum aspernatur earum incidunt qui placeat animi ratione, doloribus ad perspiciatis cumque officiis hic praesentium dolorum at explicabo vel nostrum? Eligendi recusandae earum eum debitis consequuntur optio dicta magni aspernatur natus exercitationem ex voluptatem ipsum beatae, quos illo nulla sed at qui corporis eos doloremque explicabo perferendis magnam atque? Rem illo excepturi soluta dolor, enim quis aperiam numquam dolorum dignissimos. Incidunt ipsa deserunt eos voluptate debitis esse tenetur molestiae, natus voluptates quaerat et sit enim? Similique architecto voluptatem modi facilis. Vitae architecto porro delectus eaque impedit provident eum. Minus dolores, saepe, voluptate quo sint repudiandae eum quos nisi qui a atque consequatur corporis at amet quam dicta quibusdam pariatur obcaecati adipisci vitae nam cupiditate cumque similique! Autem consequatur molestias hic error nulla distinctio laudantium accusantium id cumque quod inventore, repudiandae deserunt quaerat iure rem, asperiores atque non harum illo maiores expedita quis illum nisi. Tenetur sunt quibusdam sapiente, mollitia iusto aut atque vero sequi. Nostrum officiis illum a maxime commodi nulla natus culpa quibusdam explicabo dolorem, veritatis, tenetur sapiente? Numquam sint dignissimos dolorum consequatur reiciendis eum esse modi veritatis?</p>
+            </div>
+        <script src="script.js"></script>
+     </body>
+     </html>
