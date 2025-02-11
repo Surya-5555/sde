@@ -10,17 +10,35 @@
 
     //   Done nav bar
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const sidenav = document.querySelector('.side-nav');
-        const btnNav = document.querySelector('.header-btn'); // Ensure this matches the button class
-        const overlayScreen = document.querySelector('.nav-overlay'); // Fixed missing dot (.)
-    
-        btnNav.addEventListener('click', () => {
-            sidenav.classList.add('open'); // Removed wrong .Nav
-        });
-    
-        overlayScreen.addEventListener('click', () => {
-            sidenav.classList.remove('open'); // Removed wrong .Nav
-        });
-    });
-    
+
+
+
+
+
+
+// Animation nav bar done
+
+
+
+        // document.addEventListener('DOMContentLoaded',()=>{
+        //     const sidenav = document.querySelector('.side-nav');
+        //     const btnNav=document.querySelector('#btn-Nav');
+        //     const overlayScreen=document.querySelector('.nav-overlay');
+            
+        //     btnNav.addEventListener('click',()=>{
+        //         sidenav.classList.add('open');
+        //     });
+        //     overlayScreen.addEventListener('click',()=>{
+        //         sidenav.classList.remove('open');
+        //     });
+
+
+        //     });
+
+
+
+
+
+
+
+        // Done
